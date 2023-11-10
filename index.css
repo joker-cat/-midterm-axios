@@ -1,0 +1,260 @@
+:root {
+    --setcolor: #00807E;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    padding-top: 120px;
+}
+
+.sec1 {
+    display: flex;
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto 100px auto;
+    padding: 60px 95px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+}
+
+.sec1-left {
+    width: 350px;
+}
+
+.logo-set {
+    width: 100%;
+}
+
+.title-set {
+    width: 100%;
+}
+
+.sec1-right {
+    width: 350px;
+}
+
+.new-ticket {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--setcolor);
+    border-bottom: 3px solid var(--setcolor);
+}
+.new-ticket::before{
+    content: '+';
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 6px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background: var(--setcolor);
+}
+.infostyle-set {
+    list-style-type: none;
+}
+
+.infostyle-set>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.infostyle-set label {
+    font-size: 16px;
+    color: var(--setcolor);
+    font-family: Noto Sans, Medium;
+}
+
+.infostyle-set label::after {
+    content: '*';
+    color: #FF0000;
+}
+
+.input-set,
+.select-area,
+.textarea-set {
+    width: 100%;
+    max-width: 255px;
+    padding: 8px 0 8px 12px;
+    line-height: 22px;
+    border-width: 0;
+    border-bottom: 1px solid var(--setcolor);
+    font-size: 16px;
+    color: #818A91;
+}
+
+.textarea-set {
+    max-height: 120px;
+    min-height: 120px;
+    min-width: 255px;
+}
+
+.btn {
+    float: right;
+    margin-top: 24px;
+    padding: 10px 40px;
+    font-size: 20px;
+    background: var(--setcolor);
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 5px
+}
+
+
+
+/* ----------------------------------- */
+
+.sec2 {
+    background: #F7F7F7;
+    width: 100%;
+
+}
+
+.filter {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto 52px auto;
+    font-size: 0;
+    /*行內換行會多個空白*/
+}
+
+.filter-area {
+    width: 255px;
+    padding: 8px 0 8px 12px;
+    margin: 56px 30px 0 0;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+}
+
+.filter-area option {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: Noto Sans, Medium;
+}
+
+.search-getCount {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: Noto Sans, Medium;
+    color: #818A91;
+}
+
+.sec2-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.ticket-card {
+    width: 350px;
+    padding-bottom: 25px;
+    margin:0 20px 38px 0;
+    position: relative;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+}
+
+mark {
+    position: absolute;
+    top: -20px;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-family: Noto Sans, Medium;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #64C3BF;
+}
+
+.scroe {
+    position: absolute;
+    top: 160px;
+    padding: 5px 8px;
+    line-height: 22px;
+    font-size: 20px;
+    font-family: Noto Sans, Medium;
+    color: #FFFFFF;
+    background: var(--setcolor);
+}
+
+.img-set {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+h3 {
+    width: 310px;
+    margin: 0 auto 16px auto;
+    padding-bottom: 4px;
+    color: #00807E;
+    font-size: 24px;
+    line-height: 33px;
+    border-bottom: 2px solid #007572;
+}
+
+.describe{
+    width: 310px;
+    margin: 0 auto 32px auto;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: Noto Sans, Medium;
+    color: #818A91;
+}
+
+.remaining{
+    width: 310px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.remaining-count,
+.ticket-price{
+    color: var(--setcolor);
+    font-size: 16px;
+    line-height: 22px;
+    font-family: Noto Sans, Medium;
+}
+.remaining-count::before{
+    content: '!';
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 6px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background: var(--setcolor);
+}
+.twd{
+    font-size: 16px;
+    line-height: 22px;
+    margin-right: 4px;
+    color: var(--setcolor);
+}
+.ticket-price{
+    font-size: 32px;
+    line-height: 43px;
+    font-family: Roboto;
+}

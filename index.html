@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="visibility: hidden;width: 0;height: 0;overflow: hidden;">訂票網站</h1>
+    <section class="sec1">
+        <div class="sec1-left">
+            <img class="logo-set" src="https://github.com/joker-cat/-/blob/main/image/main_img.png?raw=true">
+            <img class="title-set" src="https://github.com/joker-cat/-/blob/main/image/logo.png?raw=true">
+        </div>
+        <div class="sec1-right">
+            <h2 class="new-ticket">新增旅遊套票</h2>
+            <ul class="infostyle-set">
+                <li><label>套票名稱</label><input class="is-null input-set" placeholder="請填寫套票名稱" type="text" name="name">
+                </li>
+                <li><label>圖片網址</label><input class="is-null input-set is-img" placeholder="請填寫圖片網址" type="text"
+                        name="imgUrl">
+                </li>
+                <li><label>景點地區</label>
+                    <select name="area" class="is-null select-area">
+                        <option value="" disabled selected hidden>請選擇景點地區</option>
+                        <option value="台北">台北</option>
+                        <option value="台中">台中</option>
+                        <option value="高雄">高雄</option>
+                    </select>
+                </li>
+                <li><label>套票金額</label><input class="is-null input-set" placeholder="請填寫套票金額" type="number"
+                        name="price"></li>
+                <li><label>套票組數</label><input class="is-null input-set" placeholder="請填寫套票組數" type="number"
+                        name="group"></li>
+                <li><label>套票星級</label><input min="1" max="10" class="is-null input-set" placeholder="請填寫套票星級"
+                        type="number" name="rate"></li>
+                <li><label>套票描述</label>
+                    <textarea name="description" class="is-null textarea-set" placeholder="請填寫套票描述 (限 100 字)"
+                        maxlength="100"></textarea>
+                </li>
+            </ul>
+            <button class="btn">新增套票</button>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="filter">
+            <select name="filter-viewArea" class="filter-area">
+                <option value="" disabled selected hidden>地區選擇</option>
+                <option value="全部地區">全部地區</option>
+                <option value="台北">台北</option>
+                <option value="台中">台中</option>
+                <option value="高雄">高雄</option>
+            </select>
+            <span class="search-getCount">本次搜尋共 3 筆資料</span>
+        </div>
+        <div class="sec2-container"></div>
+    </section>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
